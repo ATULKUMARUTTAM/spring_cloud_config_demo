@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: configdemo
+  profiles:
+    active: test
+  config:
+    import: configserver:http://localhost:8888
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, info
