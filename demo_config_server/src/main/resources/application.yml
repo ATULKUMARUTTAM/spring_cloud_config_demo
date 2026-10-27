@@ -1,0 +1,12 @@
+spring:
+  application:
+  name: demo_config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ATULKUMARUTTAM/spring_cloud_config_demo.git
+          default-label: main
+
+server:
+  port: 8888
